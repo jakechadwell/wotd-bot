@@ -15,7 +15,7 @@ const https = require('https');
 const client = new Discord.Client();
 
 // WOTD API URL
-const API_URL = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=${wordToken}`;
+const API_URL = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=${WORD_TOKEN}`;
 
 // general channel
 let generalChannel = "886743182589689939";
@@ -40,7 +40,7 @@ function getPronunciation(word){
 			"method": "GET",
 			"headers": {
 				"x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
-				"x-rapidapi-key": rapidToken
+				"x-rapidapi-key": RAPID_KEY
 			}
 		})
 		.then(res => {
