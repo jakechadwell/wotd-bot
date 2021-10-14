@@ -11,10 +11,6 @@ const keepAlive = require('./server');
 // standard https for api call
 const https = require('https');
 
-const rapidToken = process.env['RAPID_TOKEN'];
-
-const wordToken = process.env['WORD_TOKEN'];
-
 // initialize client
 const client = new Discord.Client();
 
